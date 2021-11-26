@@ -34,5 +34,9 @@ wave unit oil tiny dune little genre category suit tower planet fatal
 - Terminal 1: solana-test-validator
 - Terminal 2: anchor test
 
+# Install anchor
+- npm i -g @project-serum/anchor-cli
+
+
 
 
