@@ -6,10 +6,11 @@ declare_id!("FffcgRs2RDsZTVDuiuErHVoTJCHUPcnT46eH3VpycmFi");
 pub mod helloworld {
     use super::*;
 
-    pub fn initialize(ctx: Context<Initialize>) -> ProgramResult {
+    pub fn initialize(ctx: Context<InitializeDeriveAccounts>) -> ProgramResult {
         println!("initialize method: we are inside contract-::::::::::");
         Ok(())
     }
+    
     pub fn mynum(ctx: Context<MynumDeriveAccounts>) -> ProgramResult {
         println!("mynum method: we are inside contract-::::::::::");
         let some_number = &mut ctx.accounts.derive_num;
@@ -30,7 +31,7 @@ pub mod helloworld {
 }
 
 #[derive(Accounts)]
-pub struct Initialize{}
+pub struct InitializeDeriveAccounts{}
 
 #[derive(Accounts)]
 pub struct MynumDeriveAccounts<'info>{
