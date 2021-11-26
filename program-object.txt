@@ -1,0 +1,89 @@
+Program {
+    _idl: {
+      version: '0.0.0',
+      name: 'helloworld',
+      instructions: [ [Object], [Object] ],
+      accounts: [ [Object] ],
+      metadata: { address: 'FffcgRs2RDsZTVDuiuErHVoTJCHUPcnT46eH3VpycmFi' }
+    },
+    _provider: Provider {
+      connection: Connection {
+        _commitment: 'recent',
+        _confirmTransactionInitialTimeout: undefined,
+        _rpcEndpoint: 'https://api.devnet.solana.com',
+        _rpcWsEndpoint: 'wss://api.devnet.solana.com/',
+        _rpcClient: [ClientBrowser],
+        _rpcRequest: [Function (anonymous)],
+        _rpcBatchRequest: [Function (anonymous)],
+        _rpcWebSocket: [Client],
+        _rpcWebSocketConnected: false,
+        _rpcWebSocketHeartbeat: null,
+        _rpcWebSocketIdleTimeout: null,
+        _disableBlockhashCaching: false,
+        _pollingBlockhash: false,
+        _blockhashInfo: [Object],
+        _accountChangeSubscriptionCounter: 0,
+        _accountChangeSubscriptions: {},
+        _programAccountChangeSubscriptionCounter: 0,
+        _programAccountChangeSubscriptions: {},
+        _rootSubscriptionCounter: 0,
+        _rootSubscriptions: {},
+        _signatureSubscriptionCounter: 0,
+        _signatureSubscriptions: {},
+        _slotSubscriptionCounter: 0,
+        _slotSubscriptions: {},
+        _logsSubscriptionCounter: 0,
+        _logsSubscriptions: {},
+        _slotUpdateSubscriptionCounter: 0,
+        _slotUpdateSubscriptions: {}
+      },
+      wallet: NodeWallet { payer: [Keypair] },
+      opts: { preflightCommitment: 'recent', commitment: 'recent' }
+    },
+    _programId: PublicKey {
+      _bn: <BN: d9eb599b36a9b0fbd37f6a49dfc627035a9aa9d157db99d7739dc7d472018edd>
+    },
+    _coder: Coder {
+      instruction: InstructionCoder {
+        idl: [Object],
+        ixLayout: [Map],
+        sighashLayouts: [Map]
+      },
+      accounts: AccountsCoder { accountLayouts: [Map] },
+      events: EventCoder { layouts: Map(0) {} }
+    },
+    _events: EventManager {
+      _programId: PublicKey {
+        _bn: <BN: d9eb599b36a9b0fbd37f6a49dfc627035a9aa9d157db99d7739dc7d472018edd>
+      },
+      _provider: Provider {
+        connection: [Connection],
+        wallet: [NodeWallet],
+        opts: [Object]
+      },
+      _eventParser: EventParser { coder: [Coder], programId: [PublicKey] },
+      _eventCallbacks: Map(0) {},
+      _eventListeners: Map(0) {},
+      _listenerIdCount: 0
+    },
+    rpc: { initialize: [AsyncFunction: rpc], mynum: [AsyncFunction: rpc] },
+    instruction: {
+      initialize: [Function: ix] { accounts: [Function (anonymous)] },
+      mynum: [Function: ix] { accounts: [Function (anonymous)] }
+    },
+    transaction: { initialize: [Function: txFn], mynum: [Function: txFn] },
+    account: {
+      mynumStruct: AccountClient {
+        _idlAccount: [Object],
+        _programId: [PublicKey],
+        _provider: [Provider],
+        _coder: [Coder],
+        _size: 10
+      }
+    },
+    simulate: {
+      initialize: [AsyncFunction: simulate],
+      mynum: [AsyncFunction: simulate]
+    },
+    state: undefined
+  }
