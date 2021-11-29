@@ -12,6 +12,7 @@ wave unit oil tiny dune little genre category suit tower planet fatal
 - (Make sure the name is all in small case and no space and snake/camel case/capital letters)
 - solana-keygen new -o program.json
 - Replace all existing program id with new generated in program.json
+- npm i
 - anchor build ====> target/ (consists of idl)
 - Replace existing program id inside target/deploy/{programname}.json with new generated in program.json
 - solana config set payer and url to devnet: solana config get
