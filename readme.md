@@ -26,7 +26,7 @@ wave unit oil tiny dune little genre category suit tower planet fatal
 - anchor deploy 
 -       "or"
 - solana program deploy /home/imentus/Desktop/anchor-scratch/helloworld/target/deploy/helloworld.so --program-id /home/imentus/Desktop/anchor-scratch/helloworld/target/deploy/helloworld-keypair.json
-- anchor test
+- anchor test ===> It redeploys the contract and run tests folder
 ### +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # To run test cases on top of localnet
